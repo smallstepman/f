@@ -1,0 +1,4 @@
+#+begin_src shell
+docker build -t rust-rest-app .
+docker run -p 11111:11111 -e API_KEY=arstqwfparst rust-rest-app
+#+end_src

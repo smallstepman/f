@@ -88,7 +88,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .route("/currentBlockTime", web::get().to(current_block_time))
     })
-    .bind(("127.0.0.1", 11111))?
+    .bind(("0.0.0.0", 11111))?
     .run()
     .await
 }
