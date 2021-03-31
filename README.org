@@ -9,3 +9,6 @@ Welcome!
 - tests
 - figure out where the errors are comming from - interestingly, the server works and returns correct value, however while doing so, it throws =panicked at .. Deserialize(Error("invalid type: null, expected a string"))=. The error is present when endpoint returns =block_reward.result.time_stamp=, but is gone when returning =block_reward.result=
 - probably refactoring into two files wouldn't hurt
+- =format!("{}{}{}{}{}", ...)= - there must be a better way :)
+- implement =from_str_radix(time_stamp)= inside =impl for BlockReward=
+- =async.unwrap().json().async.unwrap()= - better.unwrap().error.unwrap().handling.unwrap().unwrap()
