@@ -1,1 +1,11 @@
-Hi
+Welcome!
+
+* TODOs
+** Task 1
+- tests
+- refactor main logic into separate =fn= or put it into =impl= block
+- correct exit code for WindowsOS
+** Task 2
+- tests
+- figure out where the errors are comming from - interestingly, the server works and returns correct value, however while doing so, it throws =panicked at .. Deserialize(Error("invalid type: null, expected a string"))=. The error is present when endpoint returns =block_reward.result.time_stamp=, but is gone when returning =block_reward.result=
+- probably refactoring into two files wouldn't hurt
